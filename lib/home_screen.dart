@@ -174,4 +174,9 @@ class _HomeScreenState extends State<HomeScreen> {
     waterTrackList.clear();
     setState(() {});
   }
+  @override
+  void dispose(){
+    _glassTEcontroller.dispose();
+    super.dispose();
+  }
 }
